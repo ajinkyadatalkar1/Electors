@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFFFC"
+    tools:context=".selectconstituency">
+
+
+    <Spinner
+        android:id="@+id/selectstate"
+        android:layout_width="355dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/select_constituency"
+        android:layout_width="355dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectstate" />
+
+    <Button
+        android:id="@+id/goto_profile"
+        android:layout_width="355dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#5DD9C1"
+        android:onClick="select_candidate"
+        android:text="See Candidate Profile"
+        android:textColor="#FDFFF6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="355dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#8E4A49"
+        android:onClick="onlogout"
+        android:text="Logout"
+        android:textColor="#FDFFF6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goto_profile" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="270dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="40dp"
+        android:alpha="0.1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_constituency"
+        app:srcCompat="@drawable/electors_logo" />
+
+</android.support.constraint.ConstraintLayout>
